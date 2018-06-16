@@ -52,7 +52,7 @@ function onDrag () {
   }
 
   leftservo *= k
-  rightservo *= k
+  rightservo *= -k
 
   console.log(leftservo, rightservo)
 
