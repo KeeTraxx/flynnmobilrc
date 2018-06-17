@@ -52,7 +52,7 @@ function onDrag () {
   }
 
   leftservo *= k
-  rightservo *= -k
+  rightservo *= k
 
   console.log(leftservo, rightservo)
 
@@ -66,7 +66,7 @@ function onDrag () {
 
   if (currentTime - lastmillis > 100) {
     client.publish('ch/compile/flynnmobil/leftservo', '' + Math.round(leftservo * 127));
-    client.publish('ch/compile/flynnmobil/rightservo', '' + Math.round(rightservo * 127));
+    client.publish('ch/compile/flynnmobil/rightservo', '' + Math.round(-rightservo * 127));
   }
 
   lastmillis = currentTime
