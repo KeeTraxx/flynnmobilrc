@@ -1,0 +1,7 @@
+const BROKER = 'ws://broker.hivemq.com:8000/mqtt'
+const LEFT_TOPIC  = 'mqtt/mobile/rc/left'
+const RIGHT_TOPIC = 'mqtt/mobile/rc/right'
+const LEFT_SERVO_STOP  = 70
+const RIGHT_SERVO_STOP = 70
+const LEFT_SERVO_RANGE  = 20
+const RIGHT_SERVO_RANGE = -20
